@@ -1,0 +1,6 @@
+@ZelenakSz_13.A_maratonvalto_HostAddress = http://localhost:5211
+
+GET {{ZelenakSz_13.A_maratonvalto_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
