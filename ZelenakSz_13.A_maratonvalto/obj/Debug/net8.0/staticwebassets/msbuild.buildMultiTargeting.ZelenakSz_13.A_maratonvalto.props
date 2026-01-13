@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ZelenakSz_13.A_maratonvalto.props" />
+</Project>

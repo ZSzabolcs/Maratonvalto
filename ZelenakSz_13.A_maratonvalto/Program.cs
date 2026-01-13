@@ -1,4 +1,6 @@
 
+using System.Text.Json.Serialization;
+
 namespace ZelenakSz_13.A_maratonvalto
 {
     public class Program
@@ -13,6 +15,7 @@ namespace ZelenakSz_13.A_maratonvalto
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
             var app = builder.Build();
 
@@ -26,7 +29,6 @@ namespace ZelenakSz_13.A_maratonvalto
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
