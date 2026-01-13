@@ -1,5 +1,6 @@
 
 using System.Text.Json.Serialization;
+using ZelenakSz_13.A_maratonvalto.Models;
 
 namespace ZelenakSz_13.A_maratonvalto
 {
@@ -16,6 +17,8 @@ namespace ZelenakSz_13.A_maratonvalto
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+            builder.Services.AddDbContext<MaratonContext>();
+            builder.Services.AddCors(c => { c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); });
 
             var app = builder.Build();
 
