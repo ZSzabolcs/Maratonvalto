@@ -166,6 +166,18 @@
         }
       }
     },
+    "/searchNok": {
+      "get": {
+        "tags": [
+          "Futok"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/deleteFuto": {
       "delete": {
         "tags": [

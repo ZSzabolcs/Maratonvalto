@@ -39,7 +39,26 @@ namespace ZelenakSz_13.A_maratonvalto.Controllers
 
             if (!futok.Any() || futok == null)
             {
-                return NotFound("Nem található ilyen nevű szerző.");
+                return NotFound("Nem található ilyen nevű futó.");
+            }
+
+            return BadRequest();
+        }
+
+        [HttpGet("searchNok")]
+        public async Task<ActionResult> GetNok()
+        {
+            var futok = _context.Futok.Where(f => f.Ffi == false).ToList();
+
+            if (futok != null)
+            {
+                var eredmeny = futok.Select(f => new { f.Fnev, f.Szulev }).OrderBy(f => f.Fnev).ToList();
+                return Ok(eredmeny);
+            }
+
+            if (futok == null)
+            {
+                return NotFound("Nem található női futó.");
             }
 
             return BadRequest();
