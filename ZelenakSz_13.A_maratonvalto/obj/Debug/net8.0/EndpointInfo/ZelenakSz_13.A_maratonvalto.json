@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/alterFuto": {
+    "/alterEredmeny": {
       "put": {
         "tags": [
           "Eredmenyek"
@@ -118,6 +118,54 @@
             "in": "query",
             "schema": {
               "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Futok"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Futok"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Futok"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/deleteFuto": {
+      "delete": {
+        "tags": [
+          "Futok"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
