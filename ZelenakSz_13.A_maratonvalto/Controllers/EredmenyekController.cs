@@ -16,12 +16,24 @@ namespace ZelenakSz_13.A_maratonvalto.Controllers
         [HttpPut("alterFuto")]
         public async Task<ActionResult<IEnumerable<Futok>>> AlterFuto(int id, int kor, int modositIdo)
         {
-            var eredmeny = _context.Eredmenyek.Where(e => e.Futo == id && e.Kor == kor);
+            var eredmeny = _context.Eredmenyek.Where(e => e.Futo == id && e.Kor == kor).ToList();
 
             if (eredmeny != null)
             {
-                
+                foreach (var item in eredmeny)
+                {
+                    item.Ido = modositIdo;
+                }
+                _context.SaveChanges();
+                return Ok("Sikeres módosítás!");
             }
+            
+            if (eredmeny == null || !eredmeny.Any())
+            {
+                return NotFound("Nem található ilyen futó.");
+            }
+
+            return BadRequest();
         }
     }
 }

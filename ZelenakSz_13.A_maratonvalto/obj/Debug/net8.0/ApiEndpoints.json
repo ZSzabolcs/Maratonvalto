@@ -1,5 +1,41 @@
 [
   {
+    "ContainingType": "ZelenakSz_13.A_maratonvalto.Controllers.EredmenyekController",
+    "Method": "AlterFuto",
+    "RelativePath": "alterFuto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "kor",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "modositIdo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ZelenakSz_13.A_maratonvalto.Models.Futok, ZelenakSz_13.A_maratonvalto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ZelenakSz_13.A_maratonvalto.Controllers.FutokController",
     "Method": "GetFuto",
     "RelativePath": "searhFuto",
