@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZelenakSz_13.A_maratonvalto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa8f34add7c1082c1d9d01163214ed65e383ba1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87640d256c5a7a0c7717696575e03d32e30dcf29")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZelenakSz_13.A_maratonvalto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZelenakSz_13.A_maratonvalto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
