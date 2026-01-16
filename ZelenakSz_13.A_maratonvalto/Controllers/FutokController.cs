@@ -44,5 +44,28 @@ namespace ZelenakSz_13.A_maratonvalto.Controllers
 
             return BadRequest();
         }
+
+        [HttpDelete("deleteFuto")]
+        public async Task<ActionResult<IEnumerable<Futok>>> DeleteFuto(int id)
+        {
+            var futo = _context.Futok.Where(f => f.Fid == id).ToList();
+
+            if (futo != null)
+            {
+                foreach (var item in futo)
+                {
+                    _context.Remove(futo);
+                    _context.SaveChanges();
+                    return Ok("Sikeres törlés!");
+                }
+            }
+
+            if (futo == null || !futo.Any())
+            {
+                return NotFound("Nem található ilyen futó.");
+            }
+
+            return BadRequest();
+        }
     }
 }

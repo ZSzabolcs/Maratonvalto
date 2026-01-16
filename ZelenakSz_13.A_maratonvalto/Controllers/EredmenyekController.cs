@@ -13,8 +13,8 @@ namespace ZelenakSz_13.A_maratonvalto.Controllers
             _context = context;
         }
 
-        [HttpPut("alterFuto")]
-        public async Task<ActionResult<IEnumerable<Futok>>> AlterFuto(int id, int kor, int modositIdo)
+        [HttpPut("alterEredmeny")]
+        public async Task<ActionResult<IEnumerable<Futok>>> AlterEredmeny(int id, int kor, int modositIdo)
         {
             var eredmeny = _context.Eredmenyek.Where(e => e.Futo == id && e.Kor == kor).ToList();
 
