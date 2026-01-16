@@ -42,7 +42,7 @@ public partial class MaratonContext : DbContext
                 .HasColumnType("int(11)")
                 .HasColumnName("ido");
 
-            entity.HasOne(d => d.FutoNavigation).WithMany(p => p.Eredmenyeks)
+            entity.HasOne(d => d.FutoNavigation).WithMany(p => p.Eredmenyek)
                 .HasForeignKey(d => d.Futo)
                 .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName("eredmenyek_ibfk_1");

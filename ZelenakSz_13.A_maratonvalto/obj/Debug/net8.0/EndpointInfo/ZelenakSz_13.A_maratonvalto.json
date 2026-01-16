@@ -1,0 +1,113 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ZelenakSz_13.A_maratonvalto",
+    "version": "1.0"
+  },
+  "paths": {
+    "/searhFutok": {
+      "get": {
+        "tags": [
+          "Futok"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Futok"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Futok"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Futok"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Eredmenyek": {
+        "type": "object",
+        "properties": {
+          "futo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kor": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ido": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "futoNavigation": {
+            "$ref": "#/components/schemas/Futok"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Futok": {
+        "type": "object",
+        "properties": {
+          "fid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fnev": {
+            "type": "string",
+            "nullable": true
+          },
+          "szulev": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "szulho": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "csapat": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ffi": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "eredmenyek": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Eredmenyek"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

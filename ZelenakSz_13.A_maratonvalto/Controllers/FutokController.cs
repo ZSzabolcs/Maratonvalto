@@ -12,10 +12,11 @@ namespace ZelenakSz_13.A_maratonvalto.Controllers
         {
             _context = context;
         }
+
         [HttpGet("searhFutok")]
         public async Task<ActionResult<IEnumerable<Futok>>> GetFutok()
         {
-            var futok = _context.Futok.ToList();
+            var futok = _context.Futok.Include(e => e.Eredmenyek).ToList();
 
             if (futok != null)
             {

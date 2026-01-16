@@ -3086,23 +3086,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zelenaksz\\.nuget\\packages\\": {},
+    "C:\\Users\\ZSzabolcs\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zelenaksz\\source\\repos\\ZelenakSz_13.A_maratonvalto\\ZelenakSz_13.A_maratonvalto\\ZelenakSz_13.A_maratonvalto.csproj",
+      "projectUniqueName": "C:\\Users\\ZSzabolcs\\Desktop\\cucc3\\ZelenakSz_13.A_maratonvalto\\ZelenakSz_13.A_maratonvalto.csproj",
       "projectName": "ZelenakSz_13.A_maratonvalto",
-      "projectPath": "C:\\Users\\zelenaksz\\source\\repos\\ZelenakSz_13.A_maratonvalto\\ZelenakSz_13.A_maratonvalto\\ZelenakSz_13.A_maratonvalto.csproj",
-      "packagesPath": "C:\\Users\\zelenaksz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zelenaksz\\source\\repos\\ZelenakSz_13.A_maratonvalto\\ZelenakSz_13.A_maratonvalto\\obj\\",
+      "projectPath": "C:\\Users\\ZSzabolcs\\Desktop\\cucc3\\ZelenakSz_13.A_maratonvalto\\ZelenakSz_13.A_maratonvalto.csproj",
+      "packagesPath": "C:\\Users\\ZSzabolcs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ZSzabolcs\\Desktop\\cucc3\\ZelenakSz_13.A_maratonvalto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\zelenaksz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ZSzabolcs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3128,9 +3128,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -3170,7 +3170,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
